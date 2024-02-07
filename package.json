@@ -1,0 +1,6 @@
+{
+    "name": "ermplugins",
+    "workspaces": [
+        "plugins/*"
+    ]
+}
