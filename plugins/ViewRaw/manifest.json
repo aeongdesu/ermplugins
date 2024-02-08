@@ -1,7 +1,7 @@
 {
     "name": "ViewRaw",
     "version": "1.0.0",
-    "description": "aliurn -> vendetta -> enmity port",
+    "description": "View raw message data",
     "authors": [
         {
             "name": "sapphire",

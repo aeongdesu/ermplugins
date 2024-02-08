@@ -2,5 +2,9 @@
     "name": "ermplugins",
     "workspaces": [
         "plugins/*"
-    ]
+    ],
+    "dependencies": {
+        "enmity": "^1.2.4",
+        "react-native": "^0.73.4"
+    }
 }
