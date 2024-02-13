@@ -28,7 +28,7 @@ const ViewRaw: Plugin = {
             if (key !== "MessageLongPressActionSheet" || !message) return
             component.then(instance => {
                 const unpatch = Patcher.after(instance, "default", (_, __, res) => {
-                    React.useEffect(() => () => { unpatch() }, [])
+                    React.useEffect(() => unpatch, [])
                     const buttons = findInReactTree(res, x => x?.[0]?.type?.name === "ButtonRow")
                     if (!buttons) return res
 
