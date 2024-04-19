@@ -1,5 +1,5 @@
 # ermplugins
-at least i have ifon x so making plugins
+at least i have ifon x and ipad sixth so making plugins
 
 rip to vendetta
 
