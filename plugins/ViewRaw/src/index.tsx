@@ -29,7 +29,9 @@ const ViewRaw: Plugin = {
             component.then(instance => {
                 const unpatch = Patcher.after(instance, "default", (_, __, res) => {
                     React.useEffect(() => unpatch, [])
-                    const buttons = findInReactTree(res, x => x?.[0]?.type?.name === "ButtonRow")
+                    // hardcoded, surely i can find better way to do it
+                    // iconSource 173 is Copy Text icon
+                    const buttons = findInReactTree(res, x => x?.[0]?.type?.name === "ButtonRow" && x?.[0]?.props?.iconSource == 173)
                     if (!buttons) return res
 
                     const navigator = () => (
